@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearCut AI - Free Background Remover</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">ClearCut AI</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#upload">Upload</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Remove Backgrounds from Images Instantly & Free!</h1>
+            <p>AI-powered, high-quality background removal in just a few clicks.</p>
+            <a href="#upload" class="btn">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <i class="fas fa-upload"></i>
+                    <h3>1. Upload Your Image</h3>
+                    <p>Click to upload your image.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-cogs"></i>
+                    <h3>2. AI Processes the Background</h3>
+                    <p>Our AI instantly removes the background for you.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-download"></i>
+                    <h3>3. Download Your Image</h3>
+                    <p>Download your image with the background removed!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Page -->
+    <section id="upload" class="upload">
+        <div class="container">
+            <h2>Upload Your Image</h2>
+            <p>Upload your image to remove the background instantly.</p>
+            <div id="upload-area" class="upload-area">
+                <input type="file" id="file-input" accept="image/*">
+                <p>Click to upload an image</p>
+            </div>
+            <div id="output">
+                <p id="status">No image uploaded yet</p>
+                <canvas id="canvas"></canvas>
+                <button id="download-btn" style="display:none;">Download Image</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ClearCut AI. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

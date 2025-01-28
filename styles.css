@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    background: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* How It Works */
+.how-it-works {
+    background: #f4f4f4;
+    padding: 20px 0;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+}
+
+.step i {
+    font-size: 50px;
+    color: #ff7f50;
+}
+
+.step h3 {
+    margin: 10px 0;
+}
+
+/* Upload Section */
+.upload #upload-area {
+    border: 2px dashed #ff7f50; /* Coral color for the dashed border */
+    padding: 50px;
+    text-align: center;
+    margin-top: 30px;
+    background: #212121;
+    border-radius: 8px;
+}
+
+.upload-area p {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+.upload-area input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.upload-area:hover {
+    cursor: pointer;
+}
+
+canvas {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
